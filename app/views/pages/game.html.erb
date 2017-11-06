@@ -1,0 +1,13 @@
+<!-- <h1>Pages#game</h1>
+<p>Find me in app/views/pages/game.html.erb</p> -->
+
+
+  <h1><%= @random_grid %></h1>
+
+
+<form action="/score" method="get">
+  <input type="text" name="answer" placeholder="Find the right word?">
+  <input type="submit">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="hidden" name="random_grid" value="<%= @random_grid %>">
+</form>
